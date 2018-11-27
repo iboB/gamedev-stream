@@ -31,10 +31,10 @@ bool human_guesses()
     return false; // no guess
 }
 
-const int MAX_NUMBER = 10; // RAND_MAX
+const int MAX_NUMBER = RAND_MAX;
 
 int low_bound = 0; // lowest possible number of the human
-int up_bound = 10; // one above the highest possible number of the human
+int up_bound = MAX_NUMBER; // one above the highest possible number of the human
 
 // return true if we guessed the number or the human is a liar
 bool i_guess()
